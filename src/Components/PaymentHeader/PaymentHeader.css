@@ -1,0 +1,63 @@
+.payment-header {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(242, 242, 242)
+  );
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.payment-header-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 192px;
+  padding-top: 5px;
+}
+
+.payment-header-title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 768px;
+  padding-top: 5px;
+}
+
+.payment-header-lock-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 192px;
+}
+
+.payment-header-amazon-image {
+  background-image: url(https://m.media-amazon.com/images/S/sash/E6vgqiIirWgGb3f.png);
+  background-size: 512px 256px;
+  background-repeat: no-repeat;
+  background-position: -2px -167px;
+  height: 31px;
+  width: 103px;
+}
+
+.payment-header-title {
+  text-align: center;
+}
+
+.payment-header-title > h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.lock-image {
+  text-align: center;
+}
+
+.item-color {
+  color: rgb(1, 113, 133);
+  font-size: 25px;
+}

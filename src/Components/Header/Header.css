@@ -1,0 +1,92 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-width: 998px;
+}
+
+.header-logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 15px;
+}
+
+.header-search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.header-searchBar {
+  padding: 8px;
+  border: none;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.header-searchBar:focus {
+  outline-width: 0;
+}
+
+.header-searchIconDiv {
+  width: 45px;
+  height: 40px;
+  color: black;
+  background-color: #febd69;
+  border-radius: 0 5px 5px 0;
+}
+
+.header-searchIcon {
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-navItem {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.header-navItemTop {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: -5px;
+  padding-top: 2px;
+}
+
+.header-navItemBottom {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.header-navCartItem {
+  display: flex;
+  align-items: center;
+  margin: 4px 15px 0px;
+  text-decoration: none;
+}
+
+.header-cartIcon {
+  padding-top: 1px;
+  color: white;
+}
+
+.header-productCount {
+  font-size: 20px;
+  margin: 0 10px;
+  color: orange;
+}
