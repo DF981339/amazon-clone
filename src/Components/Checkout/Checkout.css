@@ -9,10 +9,16 @@
 
 .checkout-left {
   margin-right: 10px;
+  width: 100%;
 }
 
 .checkout-right {
   margin-left: 10px;
+}
+
+.checkout-banner-body {
+  display: flex;
+  justify-content: center;
 }
 
 .checkout-title {

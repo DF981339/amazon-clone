@@ -19,7 +19,9 @@ function Checkout() {
   return (
     <div className="checkout">
       <div className="checkout-left">
-        <CheckoutBanner className="adsBox" />
+        <div className="checkout-banner-body">
+          <CheckoutBanner className="adsBox" />
+        </div>
 
         <div className="cartBox">
           <h2 className="checkout-title">
