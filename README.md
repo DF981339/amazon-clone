@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Amazon-Clone-Ecommerce-Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Web app is hosted on Firebase: https://clone-db7a6.web.app/
+---
+## Why and How I work on this project
+#### I wanted to learn one of the most popular front-end framework and build a full stack ecommerce app
+#### I found out many people were building clones of some famous website nowadays. Therefore, I decided to build an Amazon clone
+#### In this project, I used `React` for UI, `Firebase` for authentication and data storage, and `Stripe` for payment functionality
+---
+## Some screenshots and words briefly show how this project looks like
+### This is the Amazon look-alike home page with some hard-coded products in the front-end
+![amazon-clone-home-page](https://github.com/DF981339/amazon-clone/blob/main/Amazon-Clone%20Home%20Page.png)
+### This is the Amazon look-alike shopping cart/ proceed to checkout page
+### The value of the banner ads on the top will change dynamically based on the total of the shopping cart
+![amazon-clone-shopping-cart-page](https://github.com/DF981339/amazon-clone/blob/main/Amazon-Clone%20Checkout%20Page.png)
+### This is the Amazon look-alike checkout/ payment page with hard-coded address
+### The payment functionality that can take real payment is implemented using Stripe
+![amazon-clone-checkout-page](https://github.com/DF981339/amazon-clone/blob/main/Amazon-Clone%20Payment%20Page.png)
+### This is the Amazon look-alike order history page with the data from Firestore database by Firebase
+![amazon-clone-order-history-page](https://github.com/DF981339/amazon-clone/blob/main/Amazon-Clone%20Order%20History%20Page.png)
+---
+## What I would like to improve if I had more time
+* Learn and try to use Next.js and Redux to re-write the front-end
+* Use some API to import some fake prodects instead of hard-coding the products in the front-end
+* Add create address section to have an user-inputed address instead of hard-coding the address in the front-end
+* Make the searching functionality to work and create product detail page
+* Try to add more login method (google, facebook, etc.) and payment method (apple, paypal, etc.)
+* Implement more functionality to make it looks like a real ecommerce website
