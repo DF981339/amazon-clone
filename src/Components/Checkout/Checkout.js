@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Checkout.css";
-import CheckoutBanner from "../CheckoutBanner/CheckoutBanner";
+import CheckoutBanner from "../CheckoutBanner";
 import Subtotal from "../Subtotal/Subtotal";
 import { useStateValue } from "../../StateProvider";
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
