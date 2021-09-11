@@ -1,12 +1,12 @@
 import "./App.css";
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./Components/Header/Header";
+import Header from "./Components/Header";
 import Home from "./Components/Home/Home";
 import Checkout from "./Components/Checkout/Checkout";
-import Login from "./Components/Login/Login";
-import Footer from "./Components/Footer/Footer";
-import Register from "./Components/Register/Register";
+import Login from "./Components/Login";
+import Footer from "./Components/Footer";
+import Register from "./Components/Register";
 import Payment from "./Components/Payment/Payment";
 import Orders from "./Components/Orders/Orders";
 import PaymentHeader from "./Components/PaymentHeader/PaymentHeader";
