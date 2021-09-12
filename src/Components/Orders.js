@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import "./Orders.css";
-import { db } from "../../firebase";
+import { db } from "../firebase";
 import {
   doc,
   query,
@@ -9,8 +8,8 @@ import {
   onSnapshot,
   collection,
 } from "firebase/firestore";
-import { useStateValue } from "../../StateProvider";
-import Order from "../Order/Order";
+import { useStateValue } from "../StateProvider";
+import Order from "./Order";
 import { useHistory } from "react-router-dom";
 
 function Orders() {

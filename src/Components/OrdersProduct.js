@@ -28,7 +28,7 @@ function OrdersProduct({ id, imageURL, title, price, rating }) {
             {Array(rating)
               .fill()
               .map(() => (
-                <StarIcon className="star" />
+                <StarIcon fontSize="small" />
               ))}
           </OrdersProductRating>
         </OrdersProductInfo>
@@ -51,7 +51,7 @@ const OrdersProductImageSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-item: center;
+  align-items: center;
   aspect-ratio: auto 220 / 220;
   width: 90px;
   height: 90px;
@@ -72,4 +72,6 @@ const OrdersProductTitle = styled.div`
 const OrdersProductPrice = styled.div`
   margin-left: 3px;
 `;
-const OrdersProductRating = styled.div``;
+const OrdersProductRating = styled.div`
+  color: orange;
+`;

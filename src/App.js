@@ -8,7 +8,7 @@ import Login from "./Components/Login";
 import Footer from "./Components/Footer";
 import Register from "./Components/Register";
 import Payment from "./Components/Payment/Payment";
-import Orders from "./Components/Orders/Orders";
+import Orders from "./Components/Orders";
 import PaymentHeader from "./Components/PaymentHeader/PaymentHeader";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";

@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import dayjs from "dayjs";
 import CurrencyFormat from "react-currency-format";
-import { useStateValue } from "../../StateProvider";
-import OrdersProduct from "../OrdersProduct/OrdersProduct";
+import { useStateValue } from "../StateProvider";
+import OrdersProduct from "./OrdersProduct";
 
 function Order({ order }) {
   // eslint-disable-next-line
