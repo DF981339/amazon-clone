@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import HomeBanner from "../HomeBanner/HomeBanner";
-import Product from "../Product/Product";
+import Product from "../Product";
 import { v4 as uuidv4 } from "uuid";
 import Button from "react-bootstrap/Button";
 

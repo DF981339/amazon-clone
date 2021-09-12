@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./Product.css";
+import styled from "styled-components";
 import StarIcon from "@material-ui/icons/Star";
 import Button from "react-bootstrap/Button";
-import { useStateValue } from "../../StateProvider";
+import { useStateValue } from "../StateProvider";
 import CurrencyFormat from "react-currency-format";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -29,7 +29,10 @@ function Product({ id, title, imageUrl, price, rating }) {
       return (
         <div>
           Added to Cart
-          <FontAwesomeIcon icon={faCheck} className="check-icon" />
+          <FontAwesomeIcon
+            icon={faCheck}
+            style={{ marginLeft: "5px", color: "green" }}
+          />
         </div>
       );
     } else {
@@ -52,10 +55,10 @@ function Product({ id, title, imageUrl, price, rating }) {
   };
 
   return (
-    <div className="product">
-      <div className="product-info">
+    <ProductBody>
+      <ProductInfoBox>
         <p>{title}</p>
-        <p className="product-price">
+        <ProductPrice>
           <small>$</small>
           <strong>
             <CurrencyFormat
@@ -65,28 +68,89 @@ function Product({ id, title, imageUrl, price, rating }) {
               thousandSeparator={true}
             />
           </strong>
-        </p>
-        <div className="product-rating">
+        </ProductPrice>
+        <ProductRating>
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <StarIcon className="star" />
+              <StarIcon />
             ))}
-        </div>
-      </div>
-      <img src={imageUrl} alt="productImg" />
+        </ProductRating>
+      </ProductInfoBox>
+      <ProductImage src={imageUrl} alt="productImg" />
 
-      <Button
+      <AddToCartButton
         type="button"
         variant="warning"
         disabled={isAdded}
-        className="addToCartButtonColor"
         onClick={addToCart}
       >
         {buttonContent()}
-      </Button>
-    </div>
+      </AddToCartButton>
+    </ProductBody>
   );
 }
 
 export default Product;
+
+const ProductBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 700px;
+  max-width: 100%;
+  background-color: white;
+  z-index: 1;
+`;
+
+const ProductImage = styled.img`
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 50px;
+  margin-top: 100px;
+`;
+
+const ProductInfoBox = styled.div`
+  height: 100px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 10px 0;
+`;
+
+const ProductPrice = styled.p`
+  margin-top: 5px;
+`;
+
+const ProductRating = styled.div`
+  display: flex;
+  margin-bottom: 30px;
+  color: orange;
+`;
+
+const AddToCartButton = styled(Button)`
+  background-color: rgb(255, 216, 21);
+  color: black;
+  border: none;
+  border-radius: 20px;
+  max-width: 200px;
+  min-width: 120px;
+  font-weight: 500;
+  font-size: smaller;
+
+  &:hover {
+    background-color: rgb(235, 191, 17);
+    color: black;
+  }
+
+  &:focus {
+    background-color: rgb(255, 216, 21);
+    color: black;
+    outline: none;
+    outline-offset: none;
+  }
+`;
