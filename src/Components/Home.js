@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "./Home.css";
-import HomeBanner from "../HomeBanner/HomeBanner";
-import Product from "../Product";
+import styled from "styled-components";
+import HomeBanner from "./HomeBanner/HomeBanner";
+import Product from "./Product";
 import { v4 as uuidv4 } from "uuid";
 import Button from "react-bootstrap/Button";
 
@@ -16,12 +16,12 @@ function Home() {
   };
 
   return (
-    <div className="home">
-      <div className="home-container">
+    <HomeBody>
+      <div>
         <HomeBanner />
 
-        <div className="home-body">
-          <div className="home-row col-sm-12">
+        <HomeContainer>
+          <ProductRow>
             <Product
               id={uuidv4()}
               title="Bose SoundLink Around Ear Wireless Headphones II - Black"
@@ -36,8 +36,8 @@ function Home() {
               price={489.99}
               rating={5}
             />
-          </div>
-          <div className="home-row col-sm-12">
+          </ProductRow>
+          <ProductRow>
             <Product
               id={uuidv4()}
               title="New Apple iPhone 12 Pro Max (128GB, Pacific Blue)"
@@ -59,8 +59,8 @@ function Home() {
               price={799.99}
               rating={5}
             />
-          </div>
-          <div className="home-row">
+          </ProductRow>
+          <ProductRow>
             <Product
               id={uuidv4()}
               title="SAMSUNG LC49RG90SSNXZA 49-Inch CRG9 Curved Gaming Monitor, Black, QHD, 120Hz"
@@ -68,8 +68,8 @@ function Home() {
               price={1200.0}
               rating={4}
             />
-          </div>
-          {/* <div className="home-row">
+          </ProductRow>
+          <ProductRow>
             <Product
               id={uuidv4()}
               title="2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Silver"
@@ -91,22 +91,55 @@ function Home() {
               price={529.0}
               rating={4}
             />
-          </div> */}
-        </div>
+          </ProductRow>
+        </HomeContainer>
 
-        <div className="back-to-top">
-          <Button
+        <BackToTopBox>
+          <BackToTopButton
             type="button"
             variant="secondary"
-            className="backToTopButtonColor"
             onClick={scrollToTop}
           >
             Back to Top
-          </Button>
-        </div>
+          </BackToTopButton>
+        </BackToTopBox>
       </div>
-    </div>
+    </HomeBody>
   );
 }
 
 export default Home;
+
+const HomeBody = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 998px;
+`;
+
+const HomeContainer = styled.div`
+  margin-top: -400px;
+`;
+
+const ProductRow = styled.div`
+  display: flex;
+  z-index: 1;
+  padding: 0 5px;
+`;
+
+const BackToTopBox = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
+const BackToTopButton = styled(Button)`
+  background-color: #37475a;
+  border-radius: 25px;
+  width: 200px;
+
+  &:hover {
+    background-color: #5a6674;
+  }
+`;
