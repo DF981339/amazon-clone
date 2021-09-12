@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./Components/Home/Home";
-import Checkout from "./Components/Checkout/Checkout";
+import Checkout from "./Components/Checkout";
 import Login from "./Components/Login";
 import Footer from "./Components/Footer";
 import Register from "./Components/Register";
