@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Payment.css";
 import { useStateValue } from "../../StateProvider";
 import { getCartTotal } from "../../reducer";
-import CheckoutProduct from "../CheckoutProduct/CheckoutProduct";
+import CheckoutProduct from "../CheckoutProduct";
 import Button from "react-bootstrap/Button";
 import CurrencyFormat from "react-currency-format";
 import OrderSummary from "../OrderSummary/OrderSummary";
