@@ -5,7 +5,7 @@ import { getCartTotal } from "../../reducer";
 import CheckoutProduct from "../CheckoutProduct";
 import Button from "react-bootstrap/Button";
 import CurrencyFormat from "react-currency-format";
-import OrderSummary from "../OrderSummary/OrderSummary";
+import OrderSummary from "../OrderSummary";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import axios from "../../axios";
 import { useHistory } from "react-router-dom";
