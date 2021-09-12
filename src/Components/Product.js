@@ -97,7 +97,6 @@ const ProductBody = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
   margin: 10px;
   padding: 20px;
   width: 100%;
@@ -108,7 +107,7 @@ const ProductBody = styled.div`
 `;
 
 const ProductImage = styled.img`
-  max-height: 300px;
+  height: 300px;
   width: 100%;
   object-fit: contain;
   margin-bottom: 50px;
